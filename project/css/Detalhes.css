@@ -1,0 +1,163 @@
+img{
+    height: 300px;
+    width: 120px;
+    box-shadow: 0 0 4px #8d8d8d;
+}
+.img-icons{
+    height: 50px;
+    width: 55px;
+    box-shadow: 0 0 4px #8d8d8d;
+    background-color: black;
+}
+
+nav {
+    background-color: #333;
+  }
+.page-footer{
+    background-color: rgb(34, 32, 31);  
+}
+.footer-Titulo{
+    margin-top: 29.2px;
+    font-size: 19px;
+    padding: 0px 5;
+    padding-right: 0px;
+    color: #ffd400;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.card-contato{
+    color: white;
+    font-size: 20px;
+    width: 10px;
+}
+.footer-Texto{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 10;
+    width: 400px;
+}
+.descricao{
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #050505;
+    font-weight: 10;
+}
+.footer-copyright{
+    background-color: #ffd400 !important;
+}
+.card-sinopse{
+    font-size: 19px;
+    line-height: 24px;
+    max-height: 20px;
+    max-width: 2000px;
+}
+.card-txt{
+
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 600px;
+}
+body
+{
+   /* background-image:url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: #eee;
+    color: #333;
+    font-family: "Maven Pro",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    height: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.card-title
+{
+    text-align: center;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    line-height: 24px;
+}
+
+.card-content
+{
+    height: 300px;
+    min-width: 600px;
+    text-align: center;
+    background-color: rgba(231, 231, 231, 0.699);
+    border-style: solid;
+    border-radius: 100px;
+}
+p
+{
+    height: 250px;
+    padding-bottom: 10px;
+    font-size: 17.9px;
+}
+p2{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+h4
+{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.anima
+{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+ 
+    color: blue;
+    background-color: greenyellow;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*.preco
+{
+    color: rgb(255, 0, 0);
+    font-style:inherit;
+    font-family: Jazz LET, fantasy;
+    text-decoration: underline;
+    font-weight:inherit;
+    background-color: transparent;
+    font-size: 26px;
+}*/
+.preco{
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+    margin: 4px auto;
+}
+
+div{
+    color:black;
+    border: 0px;
+    margin: 0px;
+    padding: 1px;
+}
+img, html, body, div, p, dl, dt, dd, ol, ul, li, table, 
+caption, tbody,tr, th, td, form, fieldset, embed, object, applet {
+    border: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
