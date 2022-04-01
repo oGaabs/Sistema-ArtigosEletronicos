@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- Icons Material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <h4>Conheça nossa loja.</h4>
+                <p2 class="grey-text text-darken-2">Artigos Eletrônicos</p2>
+            </div>
+            <div class="row">
+                <div class="col l7 s12">
+                    <h4>VESTUÁRIO</h4>
+                    <p2 class="grey-text text-darken-2">#Torça com estilo</p2>
+                </div>
+            </div>
+            <div class="row">
+                <% listaProdutos.forEach((produto)=>{
+                    if (produto.category.name !== 'VESTUÁRIO') return
+                    %>
+                    <div class="col s12 m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="<%= `img/${produto.image}.png` %>">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">
+                                    <%= `${produto.type} - ${produto.name}` %>
+                                </span>
+                                <p class="card-sinopse">
+                                    <%= produto.model %>
+                                </p>
+                                <span class="preco">
+                                    <%= `R$ ${produto.price}` %>
+                                </span>
+                                </br></br>
+                                <button href="/product/<%= produto._id %>" type="button" class="anima">
+                                    <a href="/product/<%= produto._id %>" target="_blank">COMPRE!!!</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l7 s12">
+                <h4>Mouses Gamers</h4>
+                <p2 class="grey-text text-darken-2">Se precisão importa, aqui estão os rifles!</p2>
+            </div>
+        </div>
+        <div class="row">
+            <% listaProdutos.forEach((produto)=>{
+                if (produto.category.name !== 'MOUSE') return
+                %>
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="<%= `img/${produto.image}.png` %>">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">
+                                <%= `${produto.type} - ${produto.name}` %>
+                            </span>
+                            <p class="card-sinopse">
+                                <%= produto.model %>
+                            </p>
+                            <span class="preco">
+                                <%= `R$ ${produto.price}` %>
+                            </span>
+                            </br></br>
+                            <button href="/product/<%= produto._id %>" type="button" class="anima">
+                                <a href="/product/<%= produto._id %>" target="_blank">COMPRE!!!</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        <div class="row">
+            <div class="col l7 s12">
+                <h4>Mais novidades em BREVE...</h4>
+                <p2 class="grey-text text-darken-2">Estamos atualizando a loja, e logo logo traremos muitas
+                    novidades!
+                </p2>
+
+                <details>
+                    <p2>Desenvolvido por: </p2>
+                    <a href="https://www.linkedin.com/in/gabriel-santana-silva/">Gabriel Santana Silva</a>
+                </details>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+
+</html>

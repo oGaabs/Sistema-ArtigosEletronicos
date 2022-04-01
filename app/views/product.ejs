@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <title><%= `Produto - ${produto.name}` %></title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <!-- Icons Material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <h4>Detalhes de pagamento</h4>
+                <p2 class="grey-text text-darken-2">
+                    <%= title %>
+                </p2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l7 s12">
+                <h4><%= produto.category.name %></h4>
+                <p2 class="grey-text text-darken-2"> <%= produto.category.text %></p2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="<%= `/img/${produto.image}.png` %>">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m9">
+                <div class="card">
+                    <div class="card-content">
+
+                        <span class="card-title">
+                            <%= title %>
+                        </span>
+                        <p class="card-sinopse">
+                            <%= produto.model %>
+                        </p>
+
+                        <h5 class="descricao">
+                            <%- produto.description %>
+                        </h5>
+
+                        <h5 style="margin: 0;">
+                            <span class="preco">
+                                <%= `R$ ${produto.price}` %>
+                            </span>
+                            <br>
+                            <button href="/Compra/<%= produto._id %>" type="button" class="anima">
+                                <a href="/Compra/<%= produto._id %>" target="_blank">Adicionar ao carrinho</a>
+                            </button>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+
+</body>
+
+</html>
