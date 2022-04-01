@@ -13,7 +13,7 @@ const rotas = require('./app/routes/route')
 rotas(app)
 
 app.get('*', async (_req, res) => {
-    res.redirect('/');
+    res.redirect('/')
 })
 
 module.exports = app

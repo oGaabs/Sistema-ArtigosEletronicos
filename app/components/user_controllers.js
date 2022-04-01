@@ -1,4 +1,4 @@
-module.exports = async function userController(app, db) {
+module.exports = async function userController(_app, _db) {
 
 
 }

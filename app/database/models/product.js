@@ -5,7 +5,7 @@ const productSchema = new Schema({
     name: String, type: String, model: String,
     description: String, price: Number, image: String
 },
-    { collection: 'products' }
+{ collection: 'products' }
 )
 
 module.exports = model('ProductSchema', productSchema)
