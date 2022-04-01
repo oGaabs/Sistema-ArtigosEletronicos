@@ -1,0 +1,32 @@
+{
+  "name": "sistema-artigoseletronicos",
+  "version": "1.0.0",
+  "description": "Um pequeno site de vendas de artigos de esportes eletronicos.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon --delay 10 index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Santana Silva",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuniGC/Sistema-ArtigosEletronicos.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/PuniGC/Sistema-ArtigosEletronicos/issues",
+    "email": "gabriel04.ok@gmail.com"
+  },
+  "homepage": "https://github.com/PuniGC/Sistema-ArtigosEletronicos#readme"
+}
