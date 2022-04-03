@@ -6,25 +6,37 @@
                     width: 300px ;" src="/img/logo_vectorized.png">
             </a>
             <ul id="navbar-items" class="right hide-on-med-and-down">
-                <li class="active"><a href="/">Produtos
-                        <i class="material-icons left">style</i>
+                <li <% if(active=="Produtos" ){ %>class="active" <%}%> >
+                    <a href="/">
+                        Produtos <i class="material-icons left">style</i>
                     </a>
                 </li>
-                <li><a
-                        href="https://www.google.com/maps/@-22.9111786,-47.0630153,3a,75y,267.36h,86.73t/data=!3m6!1e1!3m4!1sPT7vjkirxk6dj1d-Z1YYBg!2e0!7i16384!8i8192">
-                        Loja
-                        <i class="material-icons left">store</i></a>
+                <li <% if(active=="Loja" ){ %> class="active" <%}%> >
+                    <a onclick=getStoreLocation()>
+                        Loja <i class="material-icons left">store</i>
+                    </a>
                 </li>
+                <li <% if(active=="Email" ){ %>class="active" <%}%> >
+                    <a onclick=sendEmail()>
+                        Contato <i class="material-icons left">email</i>
+                    </a>
                 </li>
-                <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=punisz.designs@gmail.com&tf=cm">Contato
-                        <i class="material-icons left">email</i></a>
+                <li <% if(active=="Carrinho" ){ %>class="active" <%}%> >
+                    <! -- href="/compra/cart._id" -->
+                    <a href="/">
+                        Carrinho <i class="material-icons left">shopping_cart</i>
+                    </a>
                 </li>
-                </a></li>
-                <li><a href="Compra.html">Carrinho
-                        <i class="material-icons left">shopping_cart</i></a>
-                </li>
-                </a></li>
             </ul>
         </div>
     </nav>
 </div>
+
+<script>
+    function getStoreLocation() {
+        window.open('https://mail.google.com/mail/u/0/?fs=1&to=punisz.designs@gmail.com&tf=cm', '_blank')
+    }
+    function sendEmail() {
+        window.open('https://mail.google.com/mail/u/0/?fs=1&to=punisz.designs@gmail.com&tf=cm', '_blank')
+    }
+</script>
