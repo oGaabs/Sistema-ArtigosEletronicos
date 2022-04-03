@@ -9,6 +9,7 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "ignorePatterns": ["**/*.ejs", "**/*.html"],
     "rules": {
         "indent": [2, 4, {
             "ImportDeclaration": "first" ,
